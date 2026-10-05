@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class MethodsInJava {
 
     static int currentBalance = 1000;
@@ -35,10 +37,14 @@ public class MethodsInJava {
 
         Greetings();
 
-        MethodsInJava.Deposit(10);
+        Scanner input = new Scanner(System.in);
+        int depositAmount = input.nextInt();
+
+        MethodsInJava.Deposit(depositAmount);
         System.out.println("Current Balance is " + getCurrentBalance());
 
-        MethodsInJava.Withdraw(100);
+        int  withdrawAmount = input.nextInt();
+        MethodsInJava.Withdraw(withdrawAmount);
 
         System.out.println("Current Balance is " + getCurrentBalance());
 
