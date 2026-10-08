@@ -44,7 +44,7 @@ public class MethodsInJava {
         System.out.println("Current Balance is " + getCurrentBalance());
 
         int  withdrawAmount = input.nextInt();
-        MethodsInJava.Withdraw(withdrawAmount);
+        MethodsInJava.Withdraw(withdrawAmount );
 
         System.out.println("Current Balance is " + getCurrentBalance());
 
